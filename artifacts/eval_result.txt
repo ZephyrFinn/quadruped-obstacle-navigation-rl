@@ -1,0 +1,23 @@
+Motphys profiler initialized: disabled
+[33;20m[skrl:WARNING] Using `from skrl.envs.torch import ...` is deprecated and will be removed in future versions.[0m
+[33;20m[skrl:WARNING]  - Import loaders using `from skrl.envs.loaders.torch import ...`[0m
+[33;20m[skrl:WARNING]  - Import wrappers using `from skrl.envs.wrappers.torch import ...`[0m
+[38;20m[skrl:INFO] Seed: 42[0m
+[Info] 地面 geom: 164 个（其中 hfield 高度场 3 个）
+[Info] 终止接触检测: 2个基座geom × 164个地面geom = 328个检测对
+[Info] 足端接触检测: 4只脚 × 164个地面geom = 656个检测对
+policy   : runs/vbot_navigation_section01/26-08-27_11-56-53-990385_PPO/checkpoints/best_agent.pt
+num_envs : 256   max_steps: 4000
+  step 1000: 已结束回合 101/256  其中成功 86
+  step 2000: 已结束回合 255/256  其中成功 240
+  step 2192: 已结束回合 256/256  其中成功 241
+
+=== 首个回合结局统计 ===
+已结束回合数     : 256/256
+成功抵达2026平台 : 241 (94.1%)
+失败(摔倒/超时)  : 15 (5.9%)
+
+成功回合耗时(步) : 中位数=1008  最快=941  最慢=2192
+成功回合耗时(秒) : 中位数=10.08s  最快=9.41s
+
+环境累计计数(含重开的后续回合): finished=511 succeeded=478 failed_by_fall=33
