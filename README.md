@@ -3,8 +3,6 @@
 VBot 四足机器人在 MotrixArena S1 Section01 赛道上的导航策略。赛道全长约 10 m，
 依次经过起步平台、起伏崎岖区、落差坎、15° 上坡，终点是 2026 平台。
 
-![demo](docs/demo.gif)
-
 256 环境确定性评估，成功率 94.1%（241/256），完赛耗时中位数 10.08 s。
 原始输出见 [`artifacts/eval_result.txt`](artifacts/eval_result.txt)。
 
